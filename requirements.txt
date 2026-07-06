@@ -1,6 +1,6 @@
 streamlit
-scikit-learn
-pandas
-numpy
 joblib
-times
+numpy
+pandas
+scikit-learn
+streamlit-option-menu
