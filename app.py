@@ -25,7 +25,7 @@ except Exception as e:
 # 2. PENGATURAN SIDEBAR (MENU KIRI)
 # ==========================================
 with st.sidebar:
-    st.image("pict\logo.png", width=300)
+    st.image("pict/logo.png", width=300)
     st.divider()
     pilihan_menu = option_menu(
         menu_title="Menu", 
@@ -58,7 +58,7 @@ if pilihan_menu == "Dashboard Utama":
             "2. Masukkan 5 data klinis pasien (Sistole, Diastole, Umur, Tinggi Badan, dan IMT).\n"
             "3. Klik tombol **Mulai Diagnosa** untuk melihat hasil dan rekomendasi medis.")
     
-    st.image("pict\ilustrasi.jpg", caption="Ilustrasi Pemeriksaan Medis", use_container_width=True)
+    st.image("pict/ilustrasi.jpg", caption="Ilustrasi Pemeriksaan Medis", use_container_width=True)
 
 # --- HALAMAN 2: PREDIKSI DIAGNOSA ---
 elif pilihan_menu == "Prediksi Diagnosa":
@@ -118,7 +118,7 @@ elif pilihan_menu == "Informasi Model":
     col_vis1, col_vis2 = st.columns(2)
     with col_vis1:
         st.write("**1. Confusion Matrix**")
-        st.image("pict\confusion_matrix.png")
+        st.image("pict/confusion_matrix.png")
 
     with col_vis2:
         st.write("**2. Tingkat Kepentingan Fitur (*Feature Importance*)**")
